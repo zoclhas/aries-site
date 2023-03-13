@@ -102,14 +102,21 @@ export function Navbar({ links }: HeaderActionProps) {
         >
             <Container className={classes.inner} fluid>
                 <Group>
-                    <Link href="/">
+                    <Link href="/" title="Home">
                         <AriesLogo height={30} />
                     </Link>
                 </Group>
                 <Group spacing={5} className={classes.links}>
                     {items}
                 </Group>
-                <Button component="a" radius="md" variant="light" h={30}>
+                <Button
+                    component="a"
+                    href="https://discord.com/oauth2/authorize?client_id=888843424923537440&permissions=5368709119918&scope=bot applications.commands"
+                    target="_blank"
+                    radius="md"
+                    variant="light"
+                    h={30}
+                >
                     Add to server
                 </Button>
             </Container>
