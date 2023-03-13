@@ -65,7 +65,11 @@ export default function Custom404() {
                 cols={2}
                 breakpoints={[{ maxWidth: "sm", cols: 1, spacing: 40 }]}
             >
-                <Image src={image} className={classes.mobileImage} />
+                <Image
+                    src={image}
+                    className={classes.mobileImage}
+                    alt="404 image"
+                />
                 <div className={classes.text_content}>
                     <Title className={classes.title}>
                         Something is not right...
@@ -87,7 +91,11 @@ export default function Custom404() {
                         </Button>
                     </Link>
                 </div>
-                <Image src={image.src} className={classes.desktopImage} />
+                <Image
+                    src={image.src}
+                    className={classes.desktopImage}
+                    alt="404 image"
+                />
             </SimpleGrid>
         </Container>
     );

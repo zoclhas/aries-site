@@ -5,6 +5,11 @@ export default function Home() {
         <>
             <Head>
                 <title>Aries</title>
+                <link
+                    rel="shortcut icon"
+                    href="/favicon.svg"
+                    type="image/x-icon"
+                />
             </Head>
         </>
     );
