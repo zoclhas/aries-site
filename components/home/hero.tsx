@@ -78,7 +78,7 @@ const useStyles = createStyles((theme) => ({
             variant: "light",
             color: theme.primaryColor,
         }).background,
-        borderRadius: theme.radius.sm,
+        borderRadius: theme.radius.lg,
         padding: `${rem(4)} ${rem(12)}`,
     },
 }));
@@ -145,7 +145,12 @@ export function Hero() {
                         </Button>
                     </Group>
                 </div>
-                <Image src={image.src} className={classes.image} radius="xl" />
+                <Image
+                    src={image.src}
+                    className={classes.image}
+                    radius="xl"
+                    alt="Hero Image"
+                />
             </div>
         </Container>
     );
