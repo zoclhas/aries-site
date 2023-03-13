@@ -64,7 +64,6 @@ const useStyles = createStyles((theme) => ({
         boxShadow: "0px 4px 16px 5px rgb(0, 0, 0, 0.15)",
 
         [theme.fn.smallerThan("md")]: {
-            zIndex: "-1",
             position: "absolute",
             opacity: "0.3",
             top: 0,
